@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+    <div class="profile-card">
+        <img
+        src=""
+        alt="Profile Picture"
+        class="profile-picture"
+        picture="profilePicture"
+      />
+        <h1 id="fullName">Loutouo Mofokou</h1>
+        <h2 id="jobTitle">Web Developer</h2>
+        <p id="Bio">
+            I’m a passionate Full Stack Developer student
+             with a strong interest in building scalable,
+             user-focused web applications. I work with both
+             front-end and back-end technologies, continuously
+             expanding my skills in modern frameworks, databases,
+             and cloud tools. I enjoy turning complex problems
+              into clean, efficient solutions and thrive in
+             collaborative environments where I can learn,
+             contribute, and grow as a developer.
+        <p id="Location">Bamenda, Cameroon</p>
+        <a href="mailto:randycarlos68@gmail.com" class="emailAddress">randycarlos68@gmail.com</a>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/cipher-lm">LinkedIn</a>
+            <a href="https://github.com/blu89">GitHub</a>
+            
+        </div>
+        <p id="Time">
+            Current UTC Time: <span id="time"></span>
+        </p>
+    </div>
+    <script>
+        function updateUTCTime() {
+        const utcTimeElement = document.getElementById("time");
+        const now = new Date();
+        utcTimeElement.textContent = now.toUTCString();
+      }
+      updateUTCTime();
+    </script>
+</body>
+
+</html>
